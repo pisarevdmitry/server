@@ -5,10 +5,8 @@ const compression = require('compression');
 
 module.exports = () => {
   const app = express();
-  const apiHost = process.env.API_HOST || 'netiak.io';
 
   app.use(compression());
-  app.set('view engine', 'hbs');
   app.use(bodyParser.json());
    
  
